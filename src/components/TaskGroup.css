@@ -11,31 +11,11 @@
 }
 
 .task-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   max-height: 400px;
   overflow-y: auto;
-}
-
-.task-item {
-  padding: 1rem;
-  background-color: #333;
-  border: 2px solid #444;
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
-  transition: all 0.3s ease;
-  color: #e0e0e0;
-  cursor: pointer;
-}
-
-.task-item:hover {
-  background-color: #3a3a3a;
-  border-color: #555;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.task-item:last-child {
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
 }

@@ -1,18 +1,22 @@
 import './TaskGroup.css';
+import Task from './Task';
 
-function TaskGroup({ tasks }) {
+function TaskGroup({ tasks, onCompleteTask, onDeleteTask }) {
   return (
     <div className="task-group">
       {tasks.length === 0 ? (
         <p className="no-tasks">No tasks yet. Add one above!</p>
       ) : (
-        <ul className="task-list">
-          {tasks.map((task, index) => (
-            <li key={index} className="task-item">
-              {task}
-            </li>
+        <div className="task-list">
+          {tasks.map((task) => (
+            <Task
+              key={task.id}
+              task={task}
+              onComplete={onCompleteTask}
+              onDelete={onDeleteTask}
+            />
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
