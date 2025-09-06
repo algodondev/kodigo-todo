@@ -1,0 +1,25 @@
+[build]
+  # Build command for Vite projects
+  command = "npm run build"
+  
+  # Directory where built files are located
+  publish = "dist"
+
+[build.environment]
+  # Node.js version for the build
+  NODE_VERSION = "18"
+
+[[redirects]]
+  # Handle client-side routing for React
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Security headers
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
