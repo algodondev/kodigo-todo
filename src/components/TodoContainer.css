@@ -5,17 +5,20 @@
 }
 
 .app-container.todo-main {
-  width: 400px;
+  width: 500px;
   max-height: 80vh;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  border: 2px solid #444;
+  border-radius: 12px;
+  background-color: #2a2a2a;
   flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .app-container.todo-main.title {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333;
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  color: #ffffff;
   text-align: center;
+  font-weight: 600;
 }
