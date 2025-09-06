@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container.todo-main {
+  width: 400px;
+  max-height: 80vh;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+.app-container.todo-main.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
